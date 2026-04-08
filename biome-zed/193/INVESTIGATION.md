@@ -301,3 +301,18 @@ files: Some(
   },
 ),
 ```
+
+i also noticed that the service was using the `myapp/biome.json` as a pathHint
+**server.log**
+```log
+  └─┐biome_service::configuration::read_config{path_hint=FromWorkspace("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), seek_root=false}
+    ├─ INFO biome_fs::fs Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/biome.json.
+    ├─ INFO biome_fs::fs Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/biome.jsonc.
+    ├─ INFO biome_fs::fs Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/.biome.json.
+    ├─ INFO biome_fs::fs Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/.biome.jsonc.
+    ├─ INFO biome_fs::fs Biome auto discovered the file at the following path that isn't in the working directory:
+    │  "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app"
+  ┌─┘
+┌─┘
+┘
+```
