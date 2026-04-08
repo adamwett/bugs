@@ -1,0 +1,1347 @@
+2026-04-08T16:01:29.910132Z  INFO main load_configuration:read_config: crates/biome_fs/src/fs.rs: Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/biome.json. config_path=None path_hint=None seek_root=true
+2026-04-08T16:01:29.910220Z  INFO main load_configuration:read_config: crates/biome_fs/src/fs.rs: Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/biome.jsonc. config_path=None path_hint=None seek_root=true
+2026-04-08T16:01:29.910254Z  INFO main load_configuration:read_config: crates/biome_fs/src/fs.rs: Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/.biome.json. config_path=None path_hint=None seek_root=true
+2026-04-08T16:01:29.910278Z  INFO main load_configuration:read_config: crates/biome_fs/src/fs.rs: Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/.biome.jsonc. config_path=None path_hint=None seek_root=true
+2026-04-08T16:01:29.911252Z  INFO main load_configuration:read_config: crates/biome_fs/src/fs.rs: Biome auto discovered the file at the following path that isn't in the working directory:
+"/Users/adam/git/bugs/biome-zed/193/monorepo" config_path=None path_hint=None seek_root=true
+2026-04-08T16:01:29.911354Z  INFO main crates/biome_cli/src/runner/mod.rs: Configuration file loaded: Some("/Users/adam/git/bugs/biome-zed/193/monorepo/biome.json"), diagnostics detected 1
+2026-04-08T16:01:29.912303Z DEBUG main insert_project: crates/biome_service/src/projects.rs: Insert workspace folder /Users/adam/git/bugs/biome-zed/193/monorepo
+2026-04-08T16:01:29.915349Z  INFO main scan:scan_folder:read_config: crates/biome_fs/src/fs.rs: Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/biome.json. project_key=ProjectKey(1) folder="/Users/adam/git/bugs/biome-zed/193/monorepo" trigger=InitialScan scan_kind=TargetedKnownFiles { target_paths: [BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }], descend_from_targets: true } force=false verbose=false watch=false folder="/Users/adam/git/bugs/biome-zed/193/monorepo" path_hint=FromWorkspace("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json") seek_root=false
+2026-04-08T16:01:29.915431Z  INFO main scan:scan_folder:read_config: crates/biome_fs/src/fs.rs: Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/biome.jsonc. project_key=ProjectKey(1) folder="/Users/adam/git/bugs/biome-zed/193/monorepo" trigger=InitialScan scan_kind=TargetedKnownFiles { target_paths: [BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }], descend_from_targets: true } force=false verbose=false watch=false folder="/Users/adam/git/bugs/biome-zed/193/monorepo" path_hint=FromWorkspace("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json") seek_root=false
+2026-04-08T16:01:29.915473Z  INFO main scan:scan_folder:read_config: crates/biome_fs/src/fs.rs: Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/.biome.json. project_key=ProjectKey(1) folder="/Users/adam/git/bugs/biome-zed/193/monorepo" trigger=InitialScan scan_kind=TargetedKnownFiles { target_paths: [BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }], descend_from_targets: true } force=false verbose=false watch=false folder="/Users/adam/git/bugs/biome-zed/193/monorepo" path_hint=FromWorkspace("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json") seek_root=false
+2026-04-08T16:01:29.915495Z  INFO main scan:scan_folder:read_config: crates/biome_fs/src/fs.rs: Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/.biome.jsonc. project_key=ProjectKey(1) folder="/Users/adam/git/bugs/biome-zed/193/monorepo" trigger=InitialScan scan_kind=TargetedKnownFiles { target_paths: [BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }], descend_from_targets: true } force=false verbose=false watch=false folder="/Users/adam/git/bugs/biome-zed/193/monorepo" path_hint=FromWorkspace("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json") seek_root=false
+2026-04-08T16:01:29.916474Z  INFO main scan:scan_folder:read_config: crates/biome_fs/src/fs.rs: Biome auto discovered the file at the following path that isn't in the working directory:
+"/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app" project_key=ProjectKey(1) folder="/Users/adam/git/bugs/biome-zed/193/monorepo" trigger=InitialScan scan_kind=TargetedKnownFiles { target_paths: [BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }], descend_from_targets: true } force=false verbose=false watch=false folder="/Users/adam/git/bugs/biome-zed/193/monorepo" path_hint=FromWorkspace("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json") seek_root=false
+2026-04-08T16:01:29.917136Z DEBUG main scan:scan_folder:update_settings: crates/biome_service/src/projects.rs: Set nested settings for /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app project_key=ProjectKey(1) folder="/Users/adam/git/bugs/biome-zed/193/monorepo" trigger=InitialScan scan_kind=TargetedKnownFiles { target_paths: [BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }], descend_from_targets: true } force=false verbose=false watch=false folder="/Users/adam/git/bugs/biome-zed/193/monorepo"
+2026-04-08T16:01:29.917158Z DEBUG main scan:scan_folder:update_settings: crates/biome_service/src/projects.rs: Existing nested settings for /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app: None project_key=ProjectKey(1) folder="/Users/adam/git/bugs/biome-zed/193/monorepo" trigger=InitialScan scan_kind=TargetedKnownFiles { target_paths: [BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }], descend_from_targets: true } force=false verbose=false watch=false folder="/Users/adam/git/bugs/biome-zed/193/monorepo"
+2026-04-08T16:01:29.917190Z DEBUG main scan:scan_folder:update_settings: crates/biome_service/src/projects.rs: Incoming nested settings for /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app: Settings {
+    source: Some(
+        ConfigurationSource {
+            source: Some(
+                (
+                    Configuration {
+                        schema: Some(
+                            Schema(
+                                "https://biomejs.dev/schemas/2.4.10/schema.json",
+                            ),
+                        ),
+                        root: Some(
+                            false,
+                        ),
+                        extends: Some(
+                            ExtendsRoot,
+                        ),
+                        vcs: Some(
+                            VcsConfiguration {
+                                enabled: None,
+                                client_kind: None,
+                                use_ignore_file: None,
+                                root: None,
+                                default_branch: None,
+                            },
+                        ),
+                        files: Some(
+                            FilesConfiguration {
+                                max_size: None,
+                                ignore_unknown: None,
+                                includes: Some(
+                                    [
+                                        NormalizedGlob(
+                                            **/*.ts,
+                                        ),
+                                        NormalizedGlob(
+                                            **/*.ts,
+                                        ),
+                                    ],
+                                ),
+                                experimental_scanner_ignores: None,
+                            },
+                        ),
+                        formatter: Some(
+                            FormatterConfiguration {
+                                enabled: Some(
+                                    true,
+                                ),
+                                format_with_errors: Some(
+                                    false,
+                                ),
+                                indent_style: Some(
+                                    Tab,
+                                ),
+                                indent_width: Some(
+                                    2,
+                                ),
+                                line_ending: None,
+                                line_width: Some(
+                                    120,
+                                ),
+                                attribute_position: None,
+                                bracket_same_line: None,
+                                bracket_spacing: None,
+                                expand: None,
+                                trailing_newline: None,
+                                use_editorconfig: None,
+                                includes: None,
+                            },
+                        ),
+                        linter: Some(
+                            LinterConfiguration {
+                                enabled: None,
+                                rules: None,
+                                includes: None,
+                                domains: None,
+                            },
+                        ),
+                        javascript: Some(
+                            JsConfiguration {
+                                parser: Some(
+                                    JsParserConfiguration {
+                                        unsafe_parameter_decorators_enabled: None,
+                                        grit_metavariables: None,
+                                        jsx_everywhere: None,
+                                    },
+                                ),
+                                formatter: Some(
+                                    JsFormatterConfiguration {
+                                        enabled: None,
+                                        jsx_quote_style: Some(
+                                            Single,
+                                        ),
+                                        quote_properties: None,
+                                        trailing_commas: None,
+                                        semicolons: Some(
+                                            Always,
+                                        ),
+                                        arrow_parentheses: Some(
+                                            Always,
+                                        ),
+                                        bracket_same_line: None,
+                                        indent_style: None,
+                                        indent_width: None,
+                                        line_ending: None,
+                                        line_width: None,
+                                        quote_style: Some(
+                                            Single,
+                                        ),
+                                        attribute_position: None,
+                                        bracket_spacing: None,
+                                        expand: None,
+                                        operator_linebreak: None,
+                                        trailing_newline: None,
+                                    },
+                                ),
+                                linter: Some(
+                                    JsLinterConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                                assist: Some(
+                                    JsAssistConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                                globals: None,
+                                jsx_runtime: None,
+                                experimental_embedded_snippets_enabled: None,
+                            },
+                        ),
+                        json: Some(
+                            JsonConfiguration {
+                                parser: Some(
+                                    JsonParserConfiguration {
+                                        allow_comments: None,
+                                        allow_trailing_commas: None,
+                                    },
+                                ),
+                                formatter: Some(
+                                    JsonFormatterConfiguration {
+                                        enabled: None,
+                                        indent_style: None,
+                                        indent_width: None,
+                                        line_ending: None,
+                                        line_width: None,
+                                        trailing_commas: None,
+                                        expand: None,
+                                        bracket_spacing: None,
+                                        trailing_newline: None,
+                                    },
+                                ),
+                                linter: Some(
+                                    JsonLinterConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                                assist: Some(
+                                    JsonAssistConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                            },
+                        ),
+                        css: Some(
+                            CssConfiguration {
+                                parser: Some(
+                                    CssParserConfiguration {
+                                        allow_wrong_line_comments: None,
+                                        css_modules: None,
+                                        tailwind_directives: None,
+                                    },
+                                ),
+                                formatter: Some(
+                                    CssFormatterConfiguration {
+                                        enabled: None,
+                                        indent_style: None,
+                                        indent_width: None,
+                                        line_ending: None,
+                                        line_width: None,
+                                        quote_style: None,
+                                        trailing_newline: None,
+                                    },
+                                ),
+                                linter: Some(
+                                    CssLinterConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                                assist: Some(
+                                    CssAssistConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                                globals: None,
+                            },
+                        ),
+                        graphql: Some(
+                            GraphqlConfiguration {
+                                formatter: Some(
+                                    GraphqlFormatterConfiguration {
+                                        enabled: None,
+                                        indent_style: None,
+                                        indent_width: None,
+                                        line_ending: None,
+                                        line_width: None,
+                                        quote_style: None,
+                                        bracket_spacing: None,
+                                        trailing_newline: None,
+                                    },
+                                ),
+                                linter: Some(
+                                    GraphqlLinterConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                                assist: Some(
+                                    GraphqlAssistConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                            },
+                        ),
+                        grit: Some(
+                            GritConfiguration {
+                                formatter: Some(
+                                    GritFormatterConfiguration {
+                                        enabled: None,
+                                        indent_style: None,
+                                        indent_width: None,
+                                        line_ending: None,
+                                        line_width: None,
+                                        trailing_newline: None,
+                                    },
+                                ),
+                                linter: Some(
+                                    GritLinterConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                                assist: Some(
+                                    GritAssistConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                            },
+                        ),
+                        html: Some(
+                            HtmlConfiguration {
+                                experimental_full_support_enabled: None,
+                                parser: None,
+                                formatter: Some(
+                                    HtmlFormatterConfiguration {
+                                        enabled: None,
+                                        indent_style: None,
+                                        indent_width: None,
+                                        line_ending: None,
+                                        line_width: None,
+                                        attribute_position: None,
+                                        bracket_same_line: None,
+                                        whitespace_sensitivity: None,
+                                        indent_script_and_style: None,
+                                        self_close_void_elements: None,
+                                        trailing_newline: None,
+                                    },
+                                ),
+                                linter: Some(
+                                    HtmlLinterConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                                assist: Some(
+                                    HtmlAssistConfiguration {
+                                        enabled: None,
+                                    },
+                                ),
+                            },
+                        ),
+                        overrides: None,
+                        plugins: None,
+                        assist: Some(
+                            AssistConfiguration {
+                                enabled: None,
+                                actions: None,
+                                includes: None,
+                            },
+                        ),
+                    },
+                    Some(
+                        "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+                    ),
+                ),
+            ),
+            extended_configurations: ExtendedConfigurations(
+                [],
+            ),
+        },
+    ),
+    module_graph_resolution_kind: None,
+    formatter: FormatSettings {
+        enabled: Some(
+            true,
+        ),
+        format_with_errors: Some(
+            false,
+        ),
+        indent_style: Some(
+            Tab,
+        ),
+        indent_width: Some(
+            2,
+        ),
+        line_ending: None,
+        line_width: Some(
+            120,
+        ),
+        attribute_position: None,
+        bracket_same_line: None,
+        bracket_spacing: None,
+        trailing_newline: None,
+        expand: None,
+        includes: Includes {
+            working_directory: Some(
+                "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+            ),
+            globs: None,
+        },
+    },
+    linter: LinterSettings {
+        enabled: None,
+        rules: None,
+        includes: Includes {
+            working_directory: Some(
+                "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+            ),
+            globs: None,
+        },
+        domains: None,
+    },
+    languages: LanguageListSettings {
+        javascript: LanguageSettings {
+            formatter: JsFormatterSettings {
+                quote_style: Some(
+                    Single,
+                ),
+                jsx_quote_style: Some(
+                    Single,
+                ),
+                quote_properties: None,
+                trailing_commas: None,
+                semicolons: Some(
+                    Always,
+                ),
+                arrow_parentheses: Some(
+                    Always,
+                ),
+                bracket_spacing: None,
+                bracket_same_line: None,
+                line_ending: None,
+                line_width: None,
+                indent_width: None,
+                indent_style: None,
+                enabled: None,
+                attribute_position: None,
+                expand: None,
+                operator_linebreak: None,
+                trailing_newline: None,
+            },
+            linter: JsLinterSettings {
+                enabled: None,
+                suppression_reason: None,
+            },
+            assist: JsAssistSettings {
+                enabled: None,
+                suppression_reason: None,
+            },
+            globals: None,
+            parser: JsParserSettings {
+                parse_class_parameter_decorators: None,
+                grit_metavariables: None,
+                jsx_everywhere: None,
+            },
+            environment: JsEnvironmentSettings {
+                jsx_runtime: None,
+            },
+        },
+        json: LanguageSettings {
+            formatter: JsonFormatterSettings {
+                line_ending: None,
+                line_width: None,
+                indent_width: None,
+                indent_style: None,
+                trailing_commas: None,
+                expand: None,
+                bracket_spacing: None,
+                enabled: None,
+                trailing_newline: None,
+            },
+            linter: JsonLinterSettings {
+                enabled: None,
+            },
+            assist: JsonAssistSettings {
+                enabled: None,
+            },
+            globals: None,
+            parser: JsonParserSettings {
+                allow_comments: None,
+                allow_trailing_commas: None,
+            },
+            environment: (),
+        },
+        css: LanguageSettings {
+            formatter: CssFormatterSettings {
+                line_ending: None,
+                line_width: None,
+                indent_width: None,
+                indent_style: None,
+                quote_style: None,
+                enabled: None,
+                trailing_newline: None,
+            },
+            linter: CssLinterSettings {
+                enabled: None,
+                suppression_reason: None,
+            },
+            assist: CssAssistSettings {
+                enabled: None,
+            },
+            globals: None,
+            parser: CssParserSettings {
+                allow_wrong_line_comments: None,
+                css_modules_enabled: None,
+                tailwind_directives: None,
+            },
+            environment: (),
+        },
+        graphql: LanguageSettings {
+            formatter: GraphqlFormatterSettings {
+                line_ending: None,
+                line_width: None,
+                indent_width: None,
+                indent_style: None,
+                quote_style: None,
+                bracket_spacing: None,
+                enabled: None,
+                trailing_newline: None,
+            },
+            linter: GraphqlLinterSettings {
+                enabled: None,
+            },
+            assist: GraphqlAssistSettings {
+                enabled: None,
+            },
+            globals: None,
+            parser: (),
+            environment: (),
+        },
+        html: LanguageSettings {
+            formatter: HtmlFormatterSettings {
+                enabled: None,
+                line_ending: None,
+                line_width: None,
+                indent_width: None,
+                indent_style: None,
+                attribute_position: None,
+                bracket_same_line: None,
+                whitespace_sensitivity: None,
+                indent_script_and_style: None,
+                self_close_void_elements: None,
+                trailing_newline: None,
+            },
+            linter: HtmlLinterSettings {
+                enabled: None,
+            },
+            assist: HtmlAssistSettings {
+                enabled: None,
+            },
+            globals: None,
+            parser: HtmlParserSettings {
+                interpolation: None,
+            },
+            environment: (),
+        },
+        grit: LanguageSettings {
+            formatter: GritFormatterSettings {
+                line_ending: None,
+                line_width: None,
+                indent_width: None,
+                indent_style: None,
+                enabled: None,
+                trailing_newline: None,
+            },
+            linter: GritLinterSettings {
+                enabled: None,
+            },
+            assist: GritAssistSettings {
+                enabled: None,
+            },
+            globals: None,
+            parser: (),
+            environment: (),
+        },
+        markdown: LanguageSettings {
+            formatter: MarkdownFormatterSettings {
+                line_ending: None,
+                line_width: None,
+                indent_width: None,
+                indent_style: None,
+                trailing_newline: None,
+                enabled: None,
+            },
+            linter: MarkdownLinterSettings {
+                enabled: None,
+            },
+            assist: MarkdownAssistSettings {
+                enabled: None,
+            },
+            globals: None,
+            parser: (),
+            environment: (),
+        },
+    },
+    files: FilesSettings {
+        max_size: None,
+        includes: Includes {
+            working_directory: Some(
+                "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+            ),
+            globs: Some(
+                [
+                    NormalizedGlob(
+                        **/*.ts,
+                    ),
+                    NormalizedGlob(
+                        **/*.ts,
+                    ),
+                ],
+            ),
+        },
+        ignore_unknown: None,
+        scanner_ignore_entries: [
+            [
+                46,
+                99,
+                97,
+                99,
+                104,
+                101,
+            ],
+            [
+                46,
+                103,
+                105,
+                116,
+            ],
+            [
+                46,
+                104,
+                103,
+            ],
+            [
+                46,
+                110,
+                101,
+                116,
+                108,
+                105,
+                102,
+                121,
+            ],
+            [
+                46,
+                111,
+                117,
+                116,
+                112,
+                117,
+                116,
+            ],
+            [
+                46,
+                115,
+                118,
+                110,
+            ],
+            [
+                46,
+                121,
+                97,
+                114,
+                110,
+            ],
+            [
+                46,
+                116,
+                105,
+                109,
+                101,
+                115,
+                116,
+                97,
+                109,
+                112,
+            ],
+            [
+                46,
+                116,
+                117,
+                114,
+                98,
+                111,
+            ],
+            [
+                46,
+                118,
+                101,
+                114,
+                99,
+                101,
+                108,
+            ],
+            [
+                46,
+                68,
+                83,
+                95,
+                83,
+                116,
+                111,
+                114,
+                101,
+            ],
+        ],
+    },
+    assist: AssistSettings {
+        enabled: None,
+        actions: None,
+        includes: Includes {
+            working_directory: Some(
+                "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+            ),
+            globs: None,
+        },
+    },
+    plugins: Plugins(
+        [],
+    ),
+    override_settings: OverrideSettings {
+        patterns: [],
+    },
+    vcs_settings: VcsSettings {
+        client_kind: None,
+        root: None,
+        use_ignore_file: None,
+        enabled: None,
+        ignore_matches: None,
+    },
+    experimental_full_html_support: None,
+    experimental_js_embedded_snippets_enabled: None,
+} project_key=ProjectKey(1) folder="/Users/adam/git/bugs/biome-zed/193/monorepo" trigger=InitialScan scan_kind=TargetedKnownFiles { target_paths: [BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }], descend_from_targets: true } force=false verbose=false watch=false folder="/Users/adam/git/bugs/biome-zed/193/monorepo"
+2026-04-08T16:01:29.918144Z DEBUG main scan:scan_folder:update_settings: crates/biome_service/src/projects.rs: All nested settings after update: {
+    "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app": Settings {
+        source: Some(
+            ConfigurationSource {
+                source: Some(
+                    (
+                        Configuration {
+                            schema: Some(
+                                Schema(
+                                    "https://biomejs.dev/schemas/2.4.10/schema.json",
+                                ),
+                            ),
+                            root: Some(
+                                false,
+                            ),
+                            extends: Some(
+                                ExtendsRoot,
+                            ),
+                            vcs: Some(
+                                VcsConfiguration {
+                                    enabled: None,
+                                    client_kind: None,
+                                    use_ignore_file: None,
+                                    root: None,
+                                    default_branch: None,
+                                },
+                            ),
+                            files: Some(
+                                FilesConfiguration {
+                                    max_size: None,
+                                    ignore_unknown: None,
+                                    includes: Some(
+                                        [
+                                            NormalizedGlob(
+                                                **/*.ts,
+                                            ),
+                                            NormalizedGlob(
+                                                **/*.ts,
+                                            ),
+                                        ],
+                                    ),
+                                    experimental_scanner_ignores: None,
+                                },
+                            ),
+                            formatter: Some(
+                                FormatterConfiguration {
+                                    enabled: Some(
+                                        true,
+                                    ),
+                                    format_with_errors: Some(
+                                        false,
+                                    ),
+                                    indent_style: Some(
+                                        Tab,
+                                    ),
+                                    indent_width: Some(
+                                        2,
+                                    ),
+                                    line_ending: None,
+                                    line_width: Some(
+                                        120,
+                                    ),
+                                    attribute_position: None,
+                                    bracket_same_line: None,
+                                    bracket_spacing: None,
+                                    expand: None,
+                                    trailing_newline: None,
+                                    use_editorconfig: None,
+                                    includes: None,
+                                },
+                            ),
+                            linter: Some(
+                                LinterConfiguration {
+                                    enabled: None,
+                                    rules: None,
+                                    includes: None,
+                                    domains: None,
+                                },
+                            ),
+                            javascript: Some(
+                                JsConfiguration {
+                                    parser: Some(
+                                        JsParserConfiguration {
+                                            unsafe_parameter_decorators_enabled: None,
+                                            grit_metavariables: None,
+                                            jsx_everywhere: None,
+                                        },
+                                    ),
+                                    formatter: Some(
+                                        JsFormatterConfiguration {
+                                            enabled: None,
+                                            jsx_quote_style: Some(
+                                                Single,
+                                            ),
+                                            quote_properties: None,
+                                            trailing_commas: None,
+                                            semicolons: Some(
+                                                Always,
+                                            ),
+                                            arrow_parentheses: Some(
+                                                Always,
+                                            ),
+                                            bracket_same_line: None,
+                                            indent_style: None,
+                                            indent_width: None,
+                                            line_ending: None,
+                                            line_width: None,
+                                            quote_style: Some(
+                                                Single,
+                                            ),
+                                            attribute_position: None,
+                                            bracket_spacing: None,
+                                            expand: None,
+                                            operator_linebreak: None,
+                                            trailing_newline: None,
+                                        },
+                                    ),
+                                    linter: Some(
+                                        JsLinterConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                    assist: Some(
+                                        JsAssistConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                    globals: None,
+                                    jsx_runtime: None,
+                                    experimental_embedded_snippets_enabled: None,
+                                },
+                            ),
+                            json: Some(
+                                JsonConfiguration {
+                                    parser: Some(
+                                        JsonParserConfiguration {
+                                            allow_comments: None,
+                                            allow_trailing_commas: None,
+                                        },
+                                    ),
+                                    formatter: Some(
+                                        JsonFormatterConfiguration {
+                                            enabled: None,
+                                            indent_style: None,
+                                            indent_width: None,
+                                            line_ending: None,
+                                            line_width: None,
+                                            trailing_commas: None,
+                                            expand: None,
+                                            bracket_spacing: None,
+                                            trailing_newline: None,
+                                        },
+                                    ),
+                                    linter: Some(
+                                        JsonLinterConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                    assist: Some(
+                                        JsonAssistConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                },
+                            ),
+                            css: Some(
+                                CssConfiguration {
+                                    parser: Some(
+                                        CssParserConfiguration {
+                                            allow_wrong_line_comments: None,
+                                            css_modules: None,
+                                            tailwind_directives: None,
+                                        },
+                                    ),
+                                    formatter: Some(
+                                        CssFormatterConfiguration {
+                                            enabled: None,
+                                            indent_style: None,
+                                            indent_width: None,
+                                            line_ending: None,
+                                            line_width: None,
+                                            quote_style: None,
+                                            trailing_newline: None,
+                                        },
+                                    ),
+                                    linter: Some(
+                                        CssLinterConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                    assist: Some(
+                                        CssAssistConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                    globals: None,
+                                },
+                            ),
+                            graphql: Some(
+                                GraphqlConfiguration {
+                                    formatter: Some(
+                                        GraphqlFormatterConfiguration {
+                                            enabled: None,
+                                            indent_style: None,
+                                            indent_width: None,
+                                            line_ending: None,
+                                            line_width: None,
+                                            quote_style: None,
+                                            bracket_spacing: None,
+                                            trailing_newline: None,
+                                        },
+                                    ),
+                                    linter: Some(
+                                        GraphqlLinterConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                    assist: Some(
+                                        GraphqlAssistConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                },
+                            ),
+                            grit: Some(
+                                GritConfiguration {
+                                    formatter: Some(
+                                        GritFormatterConfiguration {
+                                            enabled: None,
+                                            indent_style: None,
+                                            indent_width: None,
+                                            line_ending: None,
+                                            line_width: None,
+                                            trailing_newline: None,
+                                        },
+                                    ),
+                                    linter: Some(
+                                        GritLinterConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                    assist: Some(
+                                        GritAssistConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                },
+                            ),
+                            html: Some(
+                                HtmlConfiguration {
+                                    experimental_full_support_enabled: None,
+                                    parser: None,
+                                    formatter: Some(
+                                        HtmlFormatterConfiguration {
+                                            enabled: None,
+                                            indent_style: None,
+                                            indent_width: None,
+                                            line_ending: None,
+                                            line_width: None,
+                                            attribute_position: None,
+                                            bracket_same_line: None,
+                                            whitespace_sensitivity: None,
+                                            indent_script_and_style: None,
+                                            self_close_void_elements: None,
+                                            trailing_newline: None,
+                                        },
+                                    ),
+                                    linter: Some(
+                                        HtmlLinterConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                    assist: Some(
+                                        HtmlAssistConfiguration {
+                                            enabled: None,
+                                        },
+                                    ),
+                                },
+                            ),
+                            overrides: None,
+                            plugins: None,
+                            assist: Some(
+                                AssistConfiguration {
+                                    enabled: None,
+                                    actions: None,
+                                    includes: None,
+                                },
+                            ),
+                        },
+                        Some(
+                            "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+                        ),
+                    ),
+                ),
+                extended_configurations: ExtendedConfigurations(
+                    [],
+                ),
+            },
+        ),
+        module_graph_resolution_kind: None,
+        formatter: FormatSettings {
+            enabled: Some(
+                true,
+            ),
+            format_with_errors: Some(
+                false,
+            ),
+            indent_style: Some(
+                Tab,
+            ),
+            indent_width: Some(
+                2,
+            ),
+            line_ending: None,
+            line_width: Some(
+                120,
+            ),
+            attribute_position: None,
+            bracket_same_line: None,
+            bracket_spacing: None,
+            trailing_newline: None,
+            expand: None,
+            includes: Includes {
+                working_directory: Some(
+                    "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+                ),
+                globs: None,
+            },
+        },
+        linter: LinterSettings {
+            enabled: None,
+            rules: None,
+            includes: Includes {
+                working_directory: Some(
+                    "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+                ),
+                globs: None,
+            },
+            domains: None,
+        },
+        languages: LanguageListSettings {
+            javascript: LanguageSettings {
+                formatter: JsFormatterSettings {
+                    quote_style: Some(
+                        Single,
+                    ),
+                    jsx_quote_style: Some(
+                        Single,
+                    ),
+                    quote_properties: None,
+                    trailing_commas: None,
+                    semicolons: Some(
+                        Always,
+                    ),
+                    arrow_parentheses: Some(
+                        Always,
+                    ),
+                    bracket_spacing: None,
+                    bracket_same_line: None,
+                    line_ending: None,
+                    line_width: None,
+                    indent_width: None,
+                    indent_style: None,
+                    enabled: None,
+                    attribute_position: None,
+                    expand: None,
+                    operator_linebreak: None,
+                    trailing_newline: None,
+                },
+                linter: JsLinterSettings {
+                    enabled: None,
+                    suppression_reason: None,
+                },
+                assist: JsAssistSettings {
+                    enabled: None,
+                    suppression_reason: None,
+                },
+                globals: None,
+                parser: JsParserSettings {
+                    parse_class_parameter_decorators: None,
+                    grit_metavariables: None,
+                    jsx_everywhere: None,
+                },
+                environment: JsEnvironmentSettings {
+                    jsx_runtime: None,
+                },
+            },
+            json: LanguageSettings {
+                formatter: JsonFormatterSettings {
+                    line_ending: None,
+                    line_width: None,
+                    indent_width: None,
+                    indent_style: None,
+                    trailing_commas: None,
+                    expand: None,
+                    bracket_spacing: None,
+                    enabled: None,
+                    trailing_newline: None,
+                },
+                linter: JsonLinterSettings {
+                    enabled: None,
+                },
+                assist: JsonAssistSettings {
+                    enabled: None,
+                },
+                globals: None,
+                parser: JsonParserSettings {
+                    allow_comments: None,
+                    allow_trailing_commas: None,
+                },
+                environment: (),
+            },
+            css: LanguageSettings {
+                formatter: CssFormatterSettings {
+                    line_ending: None,
+                    line_width: None,
+                    indent_width: None,
+                    indent_style: None,
+                    quote_style: None,
+                    enabled: None,
+                    trailing_newline: None,
+                },
+                linter: CssLinterSettings {
+                    enabled: None,
+                    suppression_reason: None,
+                },
+                assist: CssAssistSettings {
+                    enabled: None,
+                },
+                globals: None,
+                parser: CssParserSettings {
+                    allow_wrong_line_comments: None,
+                    css_modules_enabled: None,
+                    tailwind_directives: None,
+                },
+                environment: (),
+            },
+            graphql: LanguageSettings {
+                formatter: GraphqlFormatterSettings {
+                    line_ending: None,
+                    line_width: None,
+                    indent_width: None,
+                    indent_style: None,
+                    quote_style: None,
+                    bracket_spacing: None,
+                    enabled: None,
+                    trailing_newline: None,
+                },
+                linter: GraphqlLinterSettings {
+                    enabled: None,
+                },
+                assist: GraphqlAssistSettings {
+                    enabled: None,
+                },
+                globals: None,
+                parser: (),
+                environment: (),
+            },
+            html: LanguageSettings {
+                formatter: HtmlFormatterSettings {
+                    enabled: None,
+                    line_ending: None,
+                    line_width: None,
+                    indent_width: None,
+                    indent_style: None,
+                    attribute_position: None,
+                    bracket_same_line: None,
+                    whitespace_sensitivity: None,
+                    indent_script_and_style: None,
+                    self_close_void_elements: None,
+                    trailing_newline: None,
+                },
+                linter: HtmlLinterSettings {
+                    enabled: None,
+                },
+                assist: HtmlAssistSettings {
+                    enabled: None,
+                },
+                globals: None,
+                parser: HtmlParserSettings {
+                    interpolation: None,
+                },
+                environment: (),
+            },
+            grit: LanguageSettings {
+                formatter: GritFormatterSettings {
+                    line_ending: None,
+                    line_width: None,
+                    indent_width: None,
+                    indent_style: None,
+                    enabled: None,
+                    trailing_newline: None,
+                },
+                linter: GritLinterSettings {
+                    enabled: None,
+                },
+                assist: GritAssistSettings {
+                    enabled: None,
+                },
+                globals: None,
+                parser: (),
+                environment: (),
+            },
+            markdown: LanguageSettings {
+                formatter: MarkdownFormatterSettings {
+                    line_ending: None,
+                    line_width: None,
+                    indent_width: None,
+                    indent_style: None,
+                    trailing_newline: None,
+                    enabled: None,
+                },
+                linter: MarkdownLinterSettings {
+                    enabled: None,
+                },
+                assist: MarkdownAssistSettings {
+                    enabled: None,
+                },
+                globals: None,
+                parser: (),
+                environment: (),
+            },
+        },
+        files: FilesSettings {
+            max_size: None,
+            includes: Includes {
+                working_directory: Some(
+                    "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+                ),
+                globs: Some(
+                    [
+                        NormalizedGlob(
+                            **/*.ts,
+                        ),
+                        NormalizedGlob(
+                            **/*.ts,
+                        ),
+                    ],
+                ),
+            },
+            ignore_unknown: None,
+            scanner_ignore_entries: [
+                [
+                    46,
+                    99,
+                    97,
+                    99,
+                    104,
+                    101,
+                ],
+                [
+                    46,
+                    103,
+                    105,
+                    116,
+                ],
+                [
+                    46,
+                    104,
+                    103,
+                ],
+                [
+                    46,
+                    110,
+                    101,
+                    116,
+                    108,
+                    105,
+                    102,
+                    121,
+                ],
+                [
+                    46,
+                    111,
+                    117,
+                    116,
+                    112,
+                    117,
+                    116,
+                ],
+                [
+                    46,
+                    115,
+                    118,
+                    110,
+                ],
+                [
+                    46,
+                    121,
+                    97,
+                    114,
+                    110,
+                ],
+                [
+                    46,
+                    116,
+                    105,
+                    109,
+                    101,
+                    115,
+                    116,
+                    97,
+                    109,
+                    112,
+                ],
+                [
+                    46,
+                    116,
+                    117,
+                    114,
+                    98,
+                    111,
+                ],
+                [
+                    46,
+                    118,
+                    101,
+                    114,
+                    99,
+                    101,
+                    108,
+                ],
+                [
+                    46,
+                    68,
+                    83,
+                    95,
+                    83,
+                    116,
+                    111,
+                    114,
+                    101,
+                ],
+            ],
+        },
+        assist: AssistSettings {
+            enabled: None,
+            actions: None,
+            includes: Includes {
+                working_directory: Some(
+                    "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+                ),
+                globs: None,
+            },
+        },
+        plugins: Plugins(
+            [],
+        ),
+        override_settings: OverrideSettings {
+            patterns: [],
+        },
+        vcs_settings: VcsSettings {
+            client_kind: None,
+            root: None,
+            use_ignore_file: None,
+            enabled: None,
+            ignore_matches: None,
+        },
+        experimental_full_html_support: None,
+        experimental_js_embedded_snippets_enabled: None,
+    },
+} project_key=ProjectKey(1) folder="/Users/adam/git/bugs/biome-zed/193/monorepo" trigger=InitialScan scan_kind=TargetedKnownFiles { target_paths: [BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }], descend_from_targets: true } force=false verbose=false watch=false folder="/Users/adam/git/bugs/biome-zed/193/monorepo"
+2026-04-08T16:01:29.919557Z DEBUG biome::workspace_worker_0 can_handle: crates/biome_service/src/workspace.rs: The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+2026-04-08T16:01:29.919569Z DEBUG biome::workspace_worker_1 can_handle: crates/biome_service/src/workspace.rs: The file has the following feature sets: {Format: FileNotSupported, Lint: FileNotSupported, Search: NotRequested, Assist: FileNotSupported, Debug: FileNotSupported, HtmlFullSupport: FileNotSupported}
+2026-04-08T16:01:29.919655Z DEBUG biome::workspace_worker_0 can_handle: crates/biome_service/src/workspace.rs: The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+2026-04-08T16:01:29.919745Z DEBUG biome::workspace_worker_0 can_handle: crates/biome_service/src/workspace.rs: The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+2026-04-08T16:01:29.919917Z DEBUG biome::workspace_worker_0 can_handle: crates/biome_service/src/workspace.rs: The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+2026-04-08T16:01:29.920097Z DEBUG biome::workspace_worker_0 crates/biome_service/src/workspace.rs: The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+2026-04-08T16:01:29.926694Z  INFO biome::workspace_worker_0 pull_diagnostics: crates/biome_service/src/workspace/server.rs: Pulled 0 diagnostic(s), skipped 0 diagnostic(s) from /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts rule_categories=[Syntax, Lint, Action] path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts project_key=ProjectKey(1) skip=[] only=[]
+2026-04-08T16:01:29.926822Z DEBUG biome::workspace_worker_0 format_file: crates/biome_service/src/file_handlers/javascript.rs: JsFormatOptions { indent_style: Tab, indent_width: 2, line_ending: Lf, line_width: 120, quote_style: Single, jsx_quote_style: Single, quote_properties: AsNeeded, trailing_commas: All, semicolons: Always, arrow_parentheses: Always, bracket_spacing: BracketSpacing(true), bracket_same_line: BracketSameLine(false), source_type: JsFileSource { language: TypeScript { definition_file: false }, variant: Standard, module_kind: Module, version: ES2022, embedding_kind: None }, attribute_position: Auto, expand: Auto, operator_linebreak: After, trailing_newline: TrailingNewline(true) } path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts
+2026-04-08T16:01:29.927449Z DEBUG biome::workspace_worker_0 crates/biome_cli/src/runner/impls/process_file/format.rs: Format output is different from input: true

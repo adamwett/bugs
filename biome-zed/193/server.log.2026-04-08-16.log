@@ -1,0 +1,1057 @@
+┐biome_cli::commands::daemon::Running Server{pid=70960, log_path="/tmp/biome-logs", log_file_name_prefix="server.log"}
+INFO biome_service::scanner::watcher Starting file watcher with kind "recommended" with interval "2000"
+├─ INFO biome_cli::service::unix Trying to connect to socket /Users/adam/Library/Caches/dev.biomejs.biome/biome-socket-0.0.0
+├─ INFO biome_cli::service::unix Remove socket /Users/adam/Library/Caches/dev.biomejs.biome/biome-socket-0.0.0
+┐biome_service::scanner::watcher::run{}
+└─┐biome_cli::service::unix::run_server{}
+└─┐biome_cli::service::unix::run_server{}
+┌─┘
+  └─┐biome_lsp::server::initialize{}
+    ├─ INFO biome_lsp::server Starting Biome Language Server...
+    ├─ WARN biome_lsp::server The Biome Server was initialized with the deprecated `root_path` parameter: this is not supported, use `root_uri` instead
+    └─┐biome_lsp::session::initialize{}
+    ┌─┘
+  ┌─┘
+  └─┐biome_lsp::server::initialized{}
+    ├─ INFO biome_lsp::server Attempting to load the configuration from 'biome.json' file
+    └─┐biome_lsp::session::load_extension_settings{settings=None}
+  └─┐biome_lsp::server::did_change_configuration{params=DidChangeConfigurationParams { settings: Object {"biome": Object {"configurationPath": String("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), "requireConfiguration": Bool(true)}} }}
+    └─┐biome_lsp::session::load_extension_settings{settings=Some(Object {"biome": Object {"configurationPath": String("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), "requireConfiguration": Bool(true)}})}
+      ├─ DEBUG biome_lsp::extension_settings Correctly stored the settings coming from the client: WorkspaceSettings { unstable: false, rename: None, require_configuration: Some(true), configuration_path: Some("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), experimental: None, inline_config: None }
+    ┌─┘
+    └─┐biome_lsp::session::load_workspace_settings{reload=true}
+      ├─ INFO biome_lsp::session Detected configuration path in the workspace settings.
+      └─┐biome_lsp::session::load_biome_configuration_file{base_path=FromUser("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), reload=true}
+        └─┐biome_lsp::session::load_biome_configuration_file_internal{base_path=FromUser("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), force=true}
+          └─┐biome_service::configuration::load_configuration{config_path=FromUser("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json")}
+            └─┐biome_service::configuration::read_config{path_hint=FromUser("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), seek_root=true}
+            ┌─┘
+          ┌─┘
+          ├─ INFO biome_lsp::session Configuration loaded successfully from disk.
+          ├─ INFO biome_lsp::session Update workspace settings.
+          ├─ DEBUG biome_lsp::session Configuration path provided FromUser("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json")
+          └─┐biome_service::projects::insert_project{}
+            ├─ DEBUG biome_service::projects Insert workspace folder /Users/adam/git/bugs/biome-zed/193/monorepo
+          ┌─┘
+          └─┐biome_service::workspace::server::update_settings{}
+            └─┐biome_service::settings::merge_with_configuration{}
+            ┌─┘
+            ├─ DEBUG biome_service::projects Set nested settings for /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app
+            ├─ DEBUG biome_service::projects Existing nested settings for /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app: None
+            ├─ DEBUG biome_service::projects Incoming nested settings for /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app: Settings {
+            │      source: Some(
+            │          ConfigurationSource {
+            │              source: Some(
+            │                  (
+            │                      Configuration {
+            │                          schema: Some(
+            │                              Schema(
+            │                                  "https://biomejs.dev/schemas/2.4.10/schema.json",
+            │                              ),
+            │                          ),
+            │                          root: Some(
+            │                              false,
+            │                          ),
+            │                          extends: Some(
+            │                              ExtendsRoot,
+            │                          ),
+            │                          vcs: None,
+            │                          files: Some(
+            │                              FilesConfiguration {
+            │                                  max_size: None,
+            │                                  ignore_unknown: None,
+            │                                  includes: Some(
+            │                                      [
+            │                                          NormalizedGlob(
+            │                                              **/*.ts,
+            │                                          ),
+            │                                      ],
+            │                                  ),
+            │                                  experimental_scanner_ignores: None,
+            │                              },
+            │                          ),
+            │                          formatter: None,
+            │                          linter: None,
+            │                          javascript: None,
+            │                          json: None,
+            │                          css: None,
+            │                          graphql: None,
+            │                          grit: None,
+            │                          html: None,
+            │                          overrides: None,
+            │                          plugins: None,
+            │                          assist: None,
+            │                      },
+            │                      Some(
+            │                          "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+            │                      ),
+            │                  ),
+            │              ),
+            │              extended_configurations: ExtendedConfigurations(
+            │                  [],
+            │              ),
+            │          },
+            │      ),
+            │      module_graph_resolution_kind: None,
+            │      formatter: FormatSettings {
+            │          enabled: None,
+            │          format_with_errors: None,
+            │          indent_style: None,
+            │          indent_width: None,
+            │          line_ending: None,
+            │          line_width: None,
+            │          attribute_position: None,
+            │          bracket_same_line: None,
+            │          bracket_spacing: None,
+            │          trailing_newline: None,
+            │          expand: None,
+            │          includes: Includes {
+            │              working_directory: None,
+            │              globs: None,
+            │          },
+            │      },
+            │      linter: LinterSettings {
+            │          enabled: None,
+            │          rules: None,
+            │          includes: Includes {
+            │              working_directory: None,
+            │              globs: None,
+            │          },
+            │          domains: None,
+            │      },
+            │      languages: LanguageListSettings {
+            │          javascript: LanguageSettings {
+            │              formatter: JsFormatterSettings {
+            │                  quote_style: None,
+            │                  jsx_quote_style: None,
+            │                  quote_properties: None,
+            │                  trailing_commas: None,
+            │                  semicolons: None,
+            │                  arrow_parentheses: None,
+            │                  bracket_spacing: None,
+            │                  bracket_same_line: None,
+            │                  line_ending: None,
+            │                  line_width: None,
+            │                  indent_width: None,
+            │                  indent_style: None,
+            │                  enabled: None,
+            │                  attribute_position: None,
+            │                  expand: None,
+            │                  operator_linebreak: None,
+            │                  trailing_newline: None,
+            │              },
+            │              linter: JsLinterSettings {
+            │                  enabled: None,
+            │                  suppression_reason: None,
+            │              },
+            │              assist: JsAssistSettings {
+            │                  enabled: None,
+            │                  suppression_reason: None,
+            │              },
+            │              globals: None,
+            │              parser: JsParserSettings {
+            │                  parse_class_parameter_decorators: None,
+            │                  grit_metavariables: None,
+            │                  jsx_everywhere: None,
+            │              },
+            │              environment: JsEnvironmentSettings {
+            │                  jsx_runtime: None,
+            │              },
+            │          },
+            │          json: LanguageSettings {
+            │              formatter: JsonFormatterSettings {
+            │                  line_ending: None,
+            │                  line_width: None,
+            │                  indent_width: None,
+            │                  indent_style: None,
+            │                  trailing_commas: None,
+            │                  expand: None,
+            │                  bracket_spacing: None,
+            │                  enabled: None,
+            │                  trailing_newline: None,
+            │              },
+            │              linter: JsonLinterSettings {
+            │                  enabled: None,
+            │              },
+            │              assist: JsonAssistSettings {
+            │                  enabled: None,
+            │              },
+            │              globals: None,
+            │              parser: JsonParserSettings {
+            │                  allow_comments: None,
+            │                  allow_trailing_commas: None,
+            │              },
+            │              environment: (),
+            │          },
+            │          css: LanguageSettings {
+            │              formatter: CssFormatterSettings {
+            │                  line_ending: None,
+            │                  line_width: None,
+            │                  indent_width: None,
+            │                  indent_style: None,
+            │                  quote_style: None,
+            │                  enabled: None,
+            │                  trailing_newline: None,
+            │              },
+            │              linter: CssLinterSettings {
+            │                  enabled: None,
+            │                  suppression_reason: None,
+            │              },
+            │              assist: CssAssistSettings {
+            │                  enabled: None,
+            │              },
+            │              globals: None,
+            │              parser: CssParserSettings {
+            │                  allow_wrong_line_comments: None,
+            │                  css_modules_enabled: None,
+            │                  tailwind_directives: None,
+            │              },
+            │              environment: (),
+            │          },
+            │          graphql: LanguageSettings {
+            │              formatter: GraphqlFormatterSettings {
+            │                  line_ending: None,
+            │                  line_width: None,
+            │                  indent_width: None,
+            │                  indent_style: None,
+            │                  quote_style: None,
+            │                  bracket_spacing: None,
+            │                  enabled: None,
+            │                  trailing_newline: None,
+            │              },
+            │              linter: GraphqlLinterSettings {
+            │                  enabled: None,
+            │              },
+            │              assist: GraphqlAssistSettings {
+            │                  enabled: None,
+            │              },
+            │              globals: None,
+            │              parser: (),
+            │              environment: (),
+            │          },
+            │          html: LanguageSettings {
+            │              formatter: HtmlFormatterSettings {
+            │                  enabled: None,
+            │                  line_ending: None,
+            │                  line_width: None,
+            │                  indent_width: None,
+            │                  indent_style: None,
+            │                  attribute_position: None,
+            │                  bracket_same_line: None,
+            │                  whitespace_sensitivity: None,
+            │                  indent_script_and_style: None,
+            │                  self_close_void_elements: None,
+            │                  trailing_newline: None,
+            │              },
+            │              linter: HtmlLinterSettings {
+            │                  enabled: None,
+            │              },
+            │              assist: HtmlAssistSettings {
+            │                  enabled: None,
+            │              },
+            │              globals: None,
+            │              parser: HtmlParserSettings {
+            │                  interpolation: None,
+            │              },
+            │              environment: (),
+            │          },
+            │          grit: LanguageSettings {
+            │              formatter: GritFormatterSettings {
+            │                  line_ending: None,
+            │                  line_width: None,
+            │                  indent_width: None,
+            │                  indent_style: None,
+            │                  enabled: None,
+            │                  trailing_newline: None,
+            │              },
+            │              linter: GritLinterSettings {
+            │                  enabled: None,
+            │              },
+            │              assist: GritAssistSettings {
+            │                  enabled: None,
+            │              },
+            │              globals: None,
+            │              parser: (),
+            │              environment: (),
+            │          },
+            │          markdown: LanguageSettings {
+            │              formatter: MarkdownFormatterSettings {
+            │                  line_ending: None,
+            │                  line_width: None,
+            │                  indent_width: None,
+            │                  indent_style: None,
+            │                  trailing_newline: None,
+            │                  enabled: None,
+            │              },
+            │              linter: MarkdownLinterSettings {
+            │                  enabled: None,
+            │              },
+            │              assist: MarkdownAssistSettings {
+            │                  enabled: None,
+            │              },
+            │              globals: None,
+            │              parser: (),
+            │              environment: (),
+            │          },
+            │      },
+            │      files: FilesSettings {
+            │          max_size: None,
+            │          includes: Includes {
+            │              working_directory: Some(
+            │                  "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+            │              ),
+            │              globs: Some(
+            │                  [
+            │                      NormalizedGlob(
+            │                          **/*.ts,
+            │                      ),
+            │                  ],
+            │              ),
+            │          },
+            │          ignore_unknown: None,
+            │          scanner_ignore_entries: [
+            │              [
+            │                  46,
+            │                  99,
+            │                  97,
+            │                  99,
+            │                  104,
+            │                  101,
+            │              ],
+            │              [
+            │                  46,
+            │                  103,
+            │                  105,
+            │                  116,
+            │              ],
+            │              [
+            │                  46,
+            │                  104,
+            │                  103,
+            │              ],
+            │              [
+            │                  46,
+            │                  110,
+            │                  101,
+            │                  116,
+            │                  108,
+            │                  105,
+            │                  102,
+            │                  121,
+            │              ],
+            │              [
+            │                  46,
+            │                  111,
+            │                  117,
+            │                  116,
+            │                  112,
+            │                  117,
+            │                  116,
+            │              ],
+            │              [
+            │                  46,
+            │                  115,
+            │                  118,
+            │                  110,
+            │              ],
+            │              [
+            │                  46,
+            │                  121,
+            │                  97,
+            │                  114,
+            │                  110,
+            │              ],
+            │              [
+            │                  46,
+            │                  116,
+            │                  105,
+            │                  109,
+            │                  101,
+            │                  115,
+            │                  116,
+            │                  97,
+            │                  109,
+            │                  112,
+            │              ],
+            │              [
+            │                  46,
+            │                  116,
+            │                  117,
+            │                  114,
+            │                  98,
+            │                  111,
+            │              ],
+            │              [
+            │                  46,
+            │                  118,
+            │                  101,
+            │                  114,
+            │                  99,
+            │                  101,
+            │                  108,
+            │              ],
+            │              [
+            │                  46,
+            │                  68,
+            │                  83,
+            │                  95,
+            │                  83,
+            │                  116,
+            │                  111,
+            │                  114,
+            │                  101,
+            │              ],
+            │          ],
+            │      },
+            │      assist: AssistSettings {
+            │          enabled: None,
+            │          actions: None,
+            │          includes: Includes {
+            │              working_directory: None,
+            │              globs: None,
+            │          },
+            │      },
+            │      plugins: Plugins(
+            │          [],
+            │      ),
+            │      override_settings: OverrideSettings {
+            │          patterns: [],
+            │      },
+            │      vcs_settings: VcsSettings {
+            │          client_kind: None,
+            │          root: None,
+            │          use_ignore_file: None,
+            │          enabled: None,
+            │          ignore_matches: None,
+            │      },
+            │      experimental_full_html_support: None,
+            │      experimental_js_embedded_snippets_enabled: None,
+            │  }
+            ├─ DEBUG biome_service::projects All nested settings after update: {
+            │      "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app": Settings {
+            │          source: Some(
+            │              ConfigurationSource {
+            │                  source: Some(
+            │                      (
+            │                          Configuration {
+            │                              schema: Some(
+            │                                  Schema(
+            │                                      "https://biomejs.dev/schemas/2.4.10/schema.json",
+            │                                  ),
+            │                              ),
+            │                              root: Some(
+            │                                  false,
+            │                              ),
+            │                              extends: Some(
+            │                                  ExtendsRoot,
+            │                              ),
+            │                              vcs: None,
+            │                              files: Some(
+            │                                  FilesConfiguration {
+            │                                      max_size: None,
+            │                                      ignore_unknown: None,
+            │                                      includes: Some(
+            │                                          [
+            │                                              NormalizedGlob(
+            │                                                  **/*.ts,
+            │                                              ),
+            │                                          ],
+            │                                      ),
+            │                                      experimental_scanner_ignores: None,
+            │                                  },
+            │                              ),
+            │                              formatter: None,
+            │                              linter: None,
+            │                              javascript: None,
+            │                              json: None,
+            │                              css: None,
+            │                              graphql: None,
+            │                              grit: None,
+            │                              html: None,
+            │                              overrides: None,
+            │                              plugins: None,
+            │                              assist: None,
+            │                          },
+            │                          Some(
+            │                              "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+            │                          ),
+            │                      ),
+            │                  ),
+            │                  extended_configurations: ExtendedConfigurations(
+            │                      [],
+            │                  ),
+            │              },
+            │          ),
+            │          module_graph_resolution_kind: None,
+            │          formatter: FormatSettings {
+            │              enabled: None,
+            │              format_with_errors: None,
+            │              indent_style: None,
+            │              indent_width: None,
+            │              line_ending: None,
+            │              line_width: None,
+            │              attribute_position: None,
+            │              bracket_same_line: None,
+            │              bracket_spacing: None,
+            │              trailing_newline: None,
+            │              expand: None,
+            │              includes: Includes {
+            │                  working_directory: None,
+            │                  globs: None,
+            │              },
+            │          },
+            │          linter: LinterSettings {
+            │              enabled: None,
+            │              rules: None,
+            │              includes: Includes {
+            │                  working_directory: None,
+            │                  globs: None,
+            │              },
+            │              domains: None,
+            │          },
+            │          languages: LanguageListSettings {
+            │              javascript: LanguageSettings {
+            │                  formatter: JsFormatterSettings {
+            │                      quote_style: None,
+            │                      jsx_quote_style: None,
+            │                      quote_properties: None,
+            │                      trailing_commas: None,
+            │                      semicolons: None,
+            │                      arrow_parentheses: None,
+            │                      bracket_spacing: None,
+            │                      bracket_same_line: None,
+            │                      line_ending: None,
+            │                      line_width: None,
+            │                      indent_width: None,
+            │                      indent_style: None,
+            │                      enabled: None,
+            │                      attribute_position: None,
+            │                      expand: None,
+            │                      operator_linebreak: None,
+            │                      trailing_newline: None,
+            │                  },
+            │                  linter: JsLinterSettings {
+            │                      enabled: None,
+            │                      suppression_reason: None,
+            │                  },
+            │                  assist: JsAssistSettings {
+            │                      enabled: None,
+            │                      suppression_reason: None,
+            │                  },
+            │                  globals: None,
+            │                  parser: JsParserSettings {
+            │                      parse_class_parameter_decorators: None,
+            │                      grit_metavariables: None,
+            │                      jsx_everywhere: None,
+            │                  },
+            │                  environment: JsEnvironmentSettings {
+            │                      jsx_runtime: None,
+            │                  },
+            │              },
+            │              json: LanguageSettings {
+            │                  formatter: JsonFormatterSettings {
+            │                      line_ending: None,
+            │                      line_width: None,
+            │                      indent_width: None,
+            │                      indent_style: None,
+            │                      trailing_commas: None,
+            │                      expand: None,
+            │                      bracket_spacing: None,
+            │                      enabled: None,
+            │                      trailing_newline: None,
+            │                  },
+            │                  linter: JsonLinterSettings {
+            │                      enabled: None,
+            │                  },
+            │                  assist: JsonAssistSettings {
+            │                      enabled: None,
+            │                  },
+            │                  globals: None,
+            │                  parser: JsonParserSettings {
+            │                      allow_comments: None,
+            │                      allow_trailing_commas: None,
+            │                  },
+            │                  environment: (),
+            │              },
+            │              css: LanguageSettings {
+            │                  formatter: CssFormatterSettings {
+            │                      line_ending: None,
+            │                      line_width: None,
+            │                      indent_width: None,
+            │                      indent_style: None,
+            │                      quote_style: None,
+            │                      enabled: None,
+            │                      trailing_newline: None,
+            │                  },
+            │                  linter: CssLinterSettings {
+            │                      enabled: None,
+            │                      suppression_reason: None,
+            │                  },
+            │                  assist: CssAssistSettings {
+            │                      enabled: None,
+            │                  },
+            │                  globals: None,
+            │                  parser: CssParserSettings {
+            │                      allow_wrong_line_comments: None,
+            │                      css_modules_enabled: None,
+            │                      tailwind_directives: None,
+            │                  },
+            │                  environment: (),
+            │              },
+            │              graphql: LanguageSettings {
+            │                  formatter: GraphqlFormatterSettings {
+            │                      line_ending: None,
+            │                      line_width: None,
+            │                      indent_width: None,
+            │                      indent_style: None,
+            │                      quote_style: None,
+            │                      bracket_spacing: None,
+            │                      enabled: None,
+            │                      trailing_newline: None,
+            │                  },
+            │                  linter: GraphqlLinterSettings {
+            │                      enabled: None,
+            │                  },
+            │                  assist: GraphqlAssistSettings {
+            │                      enabled: None,
+            │                  },
+            │                  globals: None,
+            │                  parser: (),
+            │                  environment: (),
+            │              },
+            │              html: LanguageSettings {
+            │                  formatter: HtmlFormatterSettings {
+            │                      enabled: None,
+            │                      line_ending: None,
+            │                      line_width: None,
+            │                      indent_width: None,
+            │                      indent_style: None,
+            │                      attribute_position: None,
+            │                      bracket_same_line: None,
+            │                      whitespace_sensitivity: None,
+            │                      indent_script_and_style: None,
+            │                      self_close_void_elements: None,
+            │                      trailing_newline: None,
+            │                  },
+            │                  linter: HtmlLinterSettings {
+            │                      enabled: None,
+            │                  },
+            │                  assist: HtmlAssistSettings {
+            │                      enabled: None,
+            │                  },
+            │                  globals: None,
+            │                  parser: HtmlParserSettings {
+            │                      interpolation: None,
+            │                  },
+            │                  environment: (),
+            │              },
+            │              grit: LanguageSettings {
+            │                  formatter: GritFormatterSettings {
+            │                      line_ending: None,
+            │                      line_width: None,
+            │                      indent_width: None,
+            │                      indent_style: None,
+            │                      enabled: None,
+            │                      trailing_newline: None,
+            │                  },
+            │                  linter: GritLinterSettings {
+            │                      enabled: None,
+            │                  },
+            │                  assist: GritAssistSettings {
+            │                      enabled: None,
+            │                  },
+            │                  globals: None,
+            │                  parser: (),
+            │                  environment: (),
+            │              },
+            │              markdown: LanguageSettings {
+            │                  formatter: MarkdownFormatterSettings {
+            │                      line_ending: None,
+            │                      line_width: None,
+            │                      indent_width: None,
+            │                      indent_style: None,
+            │                      trailing_newline: None,
+            │                      enabled: None,
+            │                  },
+            │                  linter: MarkdownLinterSettings {
+            │                      enabled: None,
+            │                  },
+            │                  assist: MarkdownAssistSettings {
+            │                      enabled: None,
+            │                  },
+            │                  globals: None,
+            │                  parser: (),
+            │                  environment: (),
+            │              },
+            │          },
+            │          files: FilesSettings {
+            │              max_size: None,
+            │              includes: Includes {
+            │                  working_directory: Some(
+            │                      "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app",
+            │                  ),
+            │                  globs: Some(
+            │                      [
+            │                          NormalizedGlob(
+            │                              **/*.ts,
+            │                          ),
+            │                      ],
+            │                  ),
+            │              },
+            │              ignore_unknown: None,
+            │              scanner_ignore_entries: [
+            │                  [
+            │                      46,
+            │                      99,
+            │                      97,
+            │                      99,
+            │                      104,
+            │                      101,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      103,
+            │                      105,
+            │                      116,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      104,
+            │                      103,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      110,
+            │                      101,
+            │                      116,
+            │                      108,
+            │                      105,
+            │                      102,
+            │                      121,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      111,
+            │                      117,
+            │                      116,
+            │                      112,
+            │                      117,
+            │                      116,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      115,
+            │                      118,
+            │                      110,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      121,
+            │                      97,
+            │                      114,
+            │                      110,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      116,
+            │                      105,
+            │                      109,
+            │                      101,
+            │                      115,
+            │                      116,
+            │                      97,
+            │                      109,
+            │                      112,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      116,
+            │                      117,
+            │                      114,
+            │                      98,
+            │                      111,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      118,
+            │                      101,
+            │                      114,
+            │                      99,
+            │                      101,
+            │                      108,
+            │                  ],
+            │                  [
+            │                      46,
+            │                      68,
+            │                      83,
+            │                      95,
+            │                      83,
+            │                      116,
+            │                      111,
+            │                      114,
+            │                      101,
+            │                  ],
+            │              ],
+            │          },
+            │          assist: AssistSettings {
+            │              enabled: None,
+            │              actions: None,
+            │              includes: Includes {
+            │                  working_directory: None,
+            │                  globs: None,
+            │              },
+            │          },
+            │          plugins: Plugins(
+            │              [],
+            │          ),
+            │          override_settings: OverrideSettings {
+            │              patterns: [],
+            │          },
+            │          vcs_settings: VcsSettings {
+            │              client_kind: None,
+            │              root: None,
+            │              use_ignore_file: None,
+            │              enabled: None,
+            │              ignore_matches: None,
+            │          },
+            │          experimental_full_html_support: None,
+            │          experimental_js_embedded_snippets_enabled: None,
+            │      },
+            │  }
+          ┌─┘
+          └─┐biome_lsp::session::insert_and_scan_project{project_key=ProjectKey(1), path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }, scan_kind=KnownFiles, force=true}
+  └─┐biome_lsp::handlers::text_document::did_open{text_document_uri=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts, text_document_language_id=typescript}
+    └─┐biome_service::file_handlers::try_from_language_id{language_id="typescript"}
+    ┌─┘
+┐biome_lsp::session::scan_project{project_key=ProjectKey(1), scan_kind=KnownFiles, force=true}
+    └─┐biome_service::workspace::server::open_file_internal{reason=ClientRequest, path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts}
+    ┌─┘
+    └─┐biome_lsp::session::update_diagnostics{url=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts}
+      └─┐biome_lsp::session::update_diagnostics_for_document{url=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts}
+        ├─ DEBUG biome_service::workspace The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+        └─┐biome_service::workspace::server::pull_diagnostics{rule_categories=[Syntax], path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts, project_key=ProjectKey(1), skip=[], only=[]}
+          ├─ INFO biome_service::workspace::server Pulled 0 diagnostic(s), skipped 0 diagnostic(s) from /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts
+        ┌─┘
+        ├─ INFO biome_lsp::session Diagnostics sent to the client 0
+  └─┐biome_lsp::handlers::text_document::did_open{text_document_uri=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/package.json, text_document_language_id=json}
+    └─┐biome_service::file_handlers::try_from_language_id{language_id="json"}
+    ┌─┘
+  ┌─┘
+  └─┐biome_lsp::handlers::text_document::did_open{text_document_uri=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json, text_document_language_id=json}
+    └─┐biome_service::file_handlers::try_from_language_id{language_id="json"}
+    ┌─┘
+  ┌─┘
+      ┌─┘
+    ┌─┘
+  ┌─┘
+      ├─ INFO biome_lsp::session Loaded client configuration: Object {
+      │      "configurationPath": String("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"),
+      │      "requireConfiguration": Bool(true),
+      │  }
+      ├─ DEBUG biome_lsp::extension_settings Correctly stored the settings coming from the client: WorkspaceSettings { unstable: false, rename: None, require_configuration: Some(true), configuration_path: Some("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), experimental: None, inline_config: None }
+    ┌─┘
+    └─┐biome_lsp::session::load_workspace_settings{reload=false}
+      ├─ INFO biome_lsp::session Detected configuration path in the workspace settings.
+      └─┐biome_lsp::session::load_biome_configuration_file{base_path=FromUser("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), reload=false}
+┐biome_service::scanner::scan{project_key=ProjectKey(1), folder="/Users/adam/git/bugs/biome-zed/193/monorepo", trigger=InitialScan, scan_kind=KnownFiles, force=true, verbose=false, watch=false}
+└─┐biome_service::scanner::scan_folder{folder="/Users/adam/git/bugs/biome-zed/193/monorepo"}
+└─┐biome_service::scanner::watcher::watch_folders{paths={}}
+┌─┘
+┐biome_service::workspace::server::open_file_internal{reason=Index(InitialScan), path=/Users/adam/git/bugs/biome-zed/193/monorepo/biome.json}
+┐biome_service::workspace::server::open_file_internal{reason=Index(InitialScan), path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json}
+└─┐biome_service::workspace::server::update_module_graph_internal{path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json", kind: Config, was_written: false, path_kind: File { is_symlink: false } }, update_kind=AddedOrChanged(Index(InitialScan)), infer_types=false}
+┌─┘
+└─┐biome_service::workspace::server::update_module_graph_internal{path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/biome.json", kind: Config, was_written: false, path_kind: File { is_symlink: false } }, update_kind=AddedOrChanged(Index(InitialScan)), infer_types=false}
+┌─┘
+┘
+┘
+┐biome_service::workspace::server::open_file_internal{reason=Index(InitialScan), path=/Users/adam/git/bugs/biome-zed/193/monorepo/package.json}
+┐biome_service::workspace::server::open_file_internal{reason=Index(InitialScan), path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/tsconfig.json}
+┐biome_service::workspace::server::open_file_internal{reason=Index(InitialScan), path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/package.json}
+└─┐biome_service::workspace::server::update_project_layout{path="/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/tsconfig.json", update_kind=AddedOrChanged(Index(InitialScan))}
+┌─┘
+└─┐biome_service::workspace::server::update_module_graph_internal{path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/tsconfig.json", kind: Manifest, was_written: false, path_kind: File { is_symlink: false } }, update_kind=AddedOrChanged(Index(InitialScan)), infer_types=false}
+┌─┘
+┘
+└─┐biome_service::workspace::server::update_project_layout{path="/Users/adam/git/bugs/biome-zed/193/monorepo/package.json", update_kind=AddedOrChanged(Index(InitialScan))}
+└─┐biome_service::workspace::server::update_project_layout{path="/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/package.json", update_kind=AddedOrChanged(Index(InitialScan))}
+┌─┘
+└─┐biome_service::workspace::server::update_module_graph_internal{path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/package.json", kind: Manifest, was_written: false, path_kind: File { is_symlink: false } }, update_kind=AddedOrChanged(Index(InitialScan)), infer_types=false}
+┌─┘
+┘
+┌─┘
+└─┐biome_service::workspace::server::update_module_graph_internal{path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/package.json", kind: Manifest, was_written: false, path_kind: File { is_symlink: false } }, update_kind=AddedOrChanged(Index(InitialScan)), infer_types=false}
+┌─┘
+┘
+  └─┐biome_service::configuration::read_config{path_hint=FromWorkspace("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json"), seek_root=false}
+    ├─ INFO biome_fs::fs Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/biome.json.
+    ├─ INFO biome_fs::fs Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/biome.jsonc.
+    ├─ INFO biome_fs::fs Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/.biome.json.
+    ├─ INFO biome_fs::fs Couldn't find the configuration file at /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json/.biome.jsonc.
+    ├─ INFO biome_fs::fs Biome auto discovered the file at the following path that isn't in the working directory:
+    │  "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app"
+  ┌─┘
+┌─┘
+┘
+┐biome_lsp::session::update_all_diagnostics{}
+└─┐biome_lsp::session::update_diagnostics_for_document{url=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts}
+┘
+  ├─ DEBUG biome_service::workspace The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+  └─┐biome_service::workspace::server::pull_diagnostics{rule_categories=[Syntax], path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts, project_key=ProjectKey(1), skip=[], only=[]}
+          ┌─┘
+        ┌─┘
+    ├─ INFO biome_service::workspace::server Pulled 0 diagnostic(s), skipped 0 diagnostic(s) from /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts
+      ┌─┘
+      ├─ DEBUG biome_lsp::session Configuration status: Loaded
+    ┌─┘
+    └─┐biome_lsp::server::setup_capabilities{}
+      ├─ DEBUG biome_lsp::session configuration status Loaded
+      ├─ DEBUG biome_lsp::server Requires configuration: false
+      └─┐biome_lsp::session::can_register_did_change_configuration{}
+        ├─ INFO biome_lsp::session Can register didChangeConfiguration: true
+      ┌─┘
+  ┌─┘
+  ├─ INFO biome_lsp::session Diagnostics sent to the client 0
+      └─┐biome_lsp::session::can_register_did_change_watched_files{}
+        ├─ INFO biome_lsp::session Can register didChangeWatchedFiles: true
+      ┌─┘
+┌─┘
+┘
+      └─┐biome_lsp::session::can_register_formatting{}
+        ├─ INFO biome_lsp::session Can register formatting: true
+      ┌─┘
+      └─┐biome_lsp::session::can_register_range_formatting{}
+        ├─ INFO biome_lsp::session Can register rangeFormatting: true
+      ┌─┘
+      └─┐biome_lsp::session::can_register_on_type_formatting{}
+        ├─ INFO biome_lsp::session Can register onTypeFormatting: true
+      ┌─┘
+      └─┐biome_lsp::session::can_register_code_action{}
+        ├─ INFO biome_lsp::session Can register codeAction: true
+      ┌─┘
+        ├─ DEBUG biome_lsp::session Reused configuration loading result for path: FromUser("/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json")
+      ┌─┘
+      ├─ DEBUG biome_lsp::session Configuration status: Loaded
+    ┌─┘
+    └─┐biome_lsp::server::setup_capabilities{}
+      ├─ DEBUG biome_lsp::session configuration status Loaded
+      ├─ DEBUG biome_lsp::server Requires configuration: false
+      └─┐biome_lsp::session::can_register_did_change_configuration{}
+        ├─ INFO biome_lsp::session Can register didChangeConfiguration: true
+      ┌─┘
+      └─┐biome_lsp::session::can_register_did_change_watched_files{}
+        ├─ INFO biome_lsp::session Can register didChangeWatchedFiles: true
+      ┌─┘
+      └─┐biome_lsp::session::can_register_formatting{}
+        ├─ INFO biome_lsp::session Can register formatting: true
+      ┌─┘
+      └─┐biome_lsp::session::can_register_range_formatting{}
+        ├─ INFO biome_lsp::session Can register rangeFormatting: true
+      ┌─┘
+      └─┐biome_lsp::session::can_register_on_type_formatting{}
+        ├─ INFO biome_lsp::session Can register onTypeFormatting: true
+      ┌─┘
+      └─┐biome_lsp::session::can_register_code_action{}
+        ├─ INFO biome_lsp::session Can register codeAction: true
+      ┌─┘
+      ├─ INFO biome_lsp::session Unregister capabilities "workspace/didChangeWatchedFiles, textDocument/formatting, workspace/didChangeConfiguration, textDocument/rangeFormatting, textDocument/codeAction, textDocument/onTypeFormatting"
+      ├─ INFO biome_lsp::session Unregister capabilities "workspace/didChangeWatchedFiles, textDocument/formatting, workspace/didChangeConfiguration, textDocument/rangeFormatting, textDocument/codeAction, textDocument/onTypeFormatting"
+      ├─ INFO biome_lsp::session Register capabilities "workspace/didChangeWatchedFiles, textDocument/formatting, workspace/didChangeConfiguration, textDocument/rangeFormatting, textDocument/codeAction, textDocument/onTypeFormatting"
+    ┌─┘
+    └─┐biome_lsp::session::update_all_diagnostics{}
+      └─┐biome_lsp::session::update_diagnostics_for_document{url=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts}
+        ├─ DEBUG biome_service::workspace The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+        └─┐biome_service::workspace::server::pull_diagnostics{rule_categories=[Syntax, Lint, Action], path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts, project_key=ProjectKey(1), skip=[], only=[]}
+          └─┐biome_service::file_handlers::javascript::Linting JavaScript file{path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }, language=Js(JsFileSource { language: TypeScript { definition_file: false }, variant: Standard, module_kind: Module, version: ES2022, embedding_kind: None })}
+          ┌─┘
+          ├─ INFO biome_service::workspace::server Pulled 0 diagnostic(s), skipped 0 diagnostic(s) from /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts
+        ┌─┘
+        ├─ INFO biome_lsp::session Diagnostics sent to the client 0
+      ┌─┘
+    ┌─┘
+  ┌─┘
+      ├─ INFO biome_lsp::session Register capabilities "workspace/didChangeWatchedFiles, textDocument/formatting, workspace/didChangeConfiguration, textDocument/rangeFormatting, textDocument/codeAction, textDocument/onTypeFormatting"
+    ┌─┘
+    └─┐biome_lsp::session::update_all_diagnostics{}
+      └─┐biome_lsp::session::update_diagnostics_for_document{url=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts}
+        ├─ DEBUG biome_service::workspace The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+        └─┐biome_service::workspace::server::pull_diagnostics{rule_categories=[Syntax, Lint, Action], path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts, project_key=ProjectKey(1), skip=[], only=[]}
+          └─┐biome_service::file_handlers::javascript::Linting JavaScript file{path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }, language=Js(JsFileSource { language: TypeScript { definition_file: false }, variant: Standard, module_kind: Module, version: ES2022, embedding_kind: None })}
+          ┌─┘
+          ├─ INFO biome_service::workspace::server Pulled 0 diagnostic(s), skipped 0 diagnostic(s) from /Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts
+        ┌─┘
+        ├─ INFO biome_lsp::session Diagnostics sent to the client 0
+      ┌─┘
+    ┌─┘
+  ┌─┘
+  └─┐biome_lsp::handlers::analysis::code_actions{uri=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts, range=Range { start: Position { line: 0, character: 0 }, end: Position { line: 15, character: 0 } }, only=Some([CodeActionKind("source.fixAll.biome")]), diagnostics=[]}
+    ├─ INFO biome_lsp::handlers::analysis Code actions request
+    ├─ DEBUG biome_service::workspace The file has the following feature sets: {Format: NotRequested, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+    ├─ DEBUG biome_lsp::handlers::analysis Cursor range 0..321
+    └─┐biome_service::workspace::server::pull_actions{only=[], skip=[], range=Some(0..321)}
+      └─┐biome_service::file_handlers::javascript::code_actions{}
+        └─┐biome_service::file_handlers::javascript::Code actions JavaScript{range=Some(0..321), path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }}
+        ┌─┘
+        └─┐biome_service::file_handlers::javascript::Parsed file{}
+        ┌─┘
+        ├─ DEBUG biome_service::file_handlers::javascript Javascript runs the analyzer
+      ┌─┘
+    ┌─┘
+    ├─ DEBUG biome_lsp::handlers::analysis Filters: ["source.fixAll.biome"]
+    ├─ DEBUG biome_lsp::handlers::analysis Has fix all: true
+    ├─ DEBUG biome_lsp::handlers::analysis Actions: 0
+    ├─ DEBUG biome_lsp::handlers::analysis Suggested action: Apply all safe fixes in the document.
+  ┌─┘
+  └─┐biome_lsp::handlers::analysis::fix_all{path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }}
+    ├─ DEBUG biome_service::workspace The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+    └─┐biome_service::workspace::server::fix_file{path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts, rule_categories=[Lint, Action], skip=[], only=[], should_format=true}
+      └─┐biome_service::file_handlers::javascript::update_snippets{}
+      ┌─┘
+    ┌─┘
+  ┌─┘
+  └─┐biome_lsp::handlers::analysis::code_actions{uri=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts, range=Range { start: Position { line: 0, character: 0 }, end: Position { line: 15, character: 0 } }, only=Some([CodeActionKind("source.organizeImports.biome")]), diagnostics=[]}
+    ├─ INFO biome_lsp::handlers::analysis Code actions request
+    ├─ DEBUG biome_service::workspace The file has the following feature sets: {Format: NotRequested, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+    ├─ DEBUG biome_lsp::handlers::analysis Cursor range 0..321
+    └─┐biome_service::workspace::server::pull_actions{only=[], skip=[], range=Some(0..321)}
+      └─┐biome_service::file_handlers::javascript::code_actions{}
+        └─┐biome_service::file_handlers::javascript::Code actions JavaScript{range=Some(0..321), path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }}
+        ┌─┘
+        └─┐biome_service::file_handlers::javascript::Parsed file{}
+        ┌─┘
+        ├─ DEBUG biome_service::file_handlers::javascript Javascript runs the analyzer
+      ┌─┘
+    ┌─┘
+    ├─ DEBUG biome_lsp::handlers::analysis Filters: ["source.organizeImports.biome"]
+    ├─ DEBUG biome_lsp::handlers::analysis Has fix all: false
+    ├─ DEBUG biome_lsp::handlers::analysis Actions: 0
+  ┌─┘
+  └─┐biome_lsp::handlers::formatting::format{params=DocumentFormattingParams { text_document: TextDocumentIdentifier { uri: Uri(Uri { scheme: "file", authority: Some(Authority { userinfo: None, host: "", host_parsed: RegName(""), port: None }), path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts", query: None, fragment: None }) }, options: FormattingOptions { tab_size: 2, insert_spaces: false, properties: {}, trim_trailing_whitespace: Some(true), insert_final_newline: Some(true), trim_final_newlines: Some(true) }, work_done_progress_params: WorkDoneProgressParams { work_done_token: None } }}
+    ├─ DEBUG biome_service::workspace The file has the following feature sets: {Format: Supported, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+    └─┐biome_service::workspace::server::format_file{path=/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts}
+      ├─ DEBUG biome_service::file_handlers::javascript JsFormatOptions { indent_style: Tab, indent_width: 2, line_ending: Lf, line_width: 80, quote_style: Double, jsx_quote_style: Double, quote_properties: AsNeeded, trailing_commas: All, semicolons: Always, arrow_parentheses: Always, bracket_spacing: BracketSpacing(true), bracket_same_line: BracketSameLine(false), source_type: JsFileSource { language: TypeScript { definition_file: false }, variant: Standard, module_kind: Module, version: ES2022, embedding_kind: None }, attribute_position: Auto, expand: Auto, operator_linebreak: After, trailing_newline: TrailingNewline(true) }
+    ┌─┘
+  ┌─┘
+  └─┐biome_lsp::handlers::analysis::code_actions{uri=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts, range=Range { start: Position { line: 4, character: 11 }, end: Position { line: 4, character: 11 } }, only=None, diagnostics=[]}
+    ├─ INFO biome_lsp::handlers::analysis Code actions request
+    ├─ DEBUG biome_service::workspace The file has the following feature sets: {Format: NotRequested, Lint: Supported, Search: NotRequested, Assist: Supported, Debug: Supported, HtmlFullSupport: FileNotSupported}
+    ├─ DEBUG biome_lsp::handlers::analysis Cursor range 79..79
+    └─┐biome_service::workspace::server::pull_actions{only=[], skip=[], range=Some(79..79)}
+      └─┐biome_service::file_handlers::javascript::code_actions{}
+        └─┐biome_service::file_handlers::javascript::Code actions JavaScript{range=Some(79..79), path=BiomePath { path: "/Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/src/file.ts", kind: Handleable, was_written: false, path_kind: File { is_symlink: false } }}
+        ┌─┘
+        └─┐biome_service::file_handlers::javascript::Parsed file{}
+        ┌─┘
+        ├─ DEBUG biome_service::file_handlers::javascript Javascript runs the analyzer
+      ┌─┘
+    ┌─┘
+    ├─ DEBUG biome_lsp::handlers::analysis Filters: []
+    ├─ DEBUG biome_lsp::handlers::analysis Has fix all: false
+    ├─ DEBUG biome_lsp::handlers::analysis Actions: 0
+  ┌─┘
+  └─┐biome_lsp::handlers::analysis::code_actions{uri=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/package.json, range=Range { start: Position { line: 0, character: 0 }, end: Position { line: 0, character: 0 } }, only=None, diagnostics=[]}
+    ├─ INFO biome_lsp::handlers::analysis Code actions request
+  ┌─┘
+  └─┐biome_lsp::handlers::analysis::code_actions{uri=file:///Users/adam/git/bugs/biome-zed/193/monorepo/apps/my-app/biome.json, range=Range { start: Position { line: 8, character: 0 }, end: Position { line: 8, character: 0 } }, only=None, diagnostics=[]}
+    ├─ INFO biome_lsp::handlers::analysis Code actions request
+  ┌─┘
